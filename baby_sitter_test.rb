@@ -33,5 +33,8 @@ describe "Baby sitter class" do
     it "should say start time is not set when start is before 5pm"do
         expect(babysitter.set_start_time(15)).to eq("start time is not set")
     end
-        
+    
+    it " start time is between 17 and 24 hours"do
+        expect(babysitter.set_start_time(25)).to eq("start time is not set")
+    end
 end
