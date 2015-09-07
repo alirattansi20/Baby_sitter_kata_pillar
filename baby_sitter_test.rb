@@ -54,4 +54,9 @@ describe "Baby sitter class" do
     it "end time is between 00 and 04 hours"do
         expect(babysitter.set_end_time(23)).to eq("end time is not set")
     end
+    
+    it "instance end time is updated from zero to what ever it is at that time"do
+        babysitter.set_end_time(04)
+        expect(babysitter.end_time).to eq(04)
+    end
 end
