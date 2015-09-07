@@ -3,6 +3,7 @@
 # Bed time is always between start time and mid night
 # Start time is always before mid night
 # End time is always after mid night
+# working in 24 hour clock system
 
 class Babysitter
     attr_reader :start_time, :end_time, :bed_time
@@ -14,7 +15,9 @@ class Babysitter
     end
     
     def set_start_time(start_time)
-    "start time is set"
+       if start_time >= 17
+       return "start time is set"
+       end
+       "start time is not set"
     end
-
 end

@@ -3,6 +3,7 @@
 # Bed time is always between start time and mid night
 # Start time is always before mid night
 # End time is always after mid night
+# working in 24 hour clock system
 
 require_relative 'baby_sitter'
 
@@ -13,7 +14,7 @@ describe "Baby sitter class" do
         expect(babysitter).to be_a Babysitter
     end
     
-     it "should have an initial start time of zero"do
+    it "should have an initial start time of zero"do
         expect(babysitter.start_time).to eq(0)
     end
     
@@ -25,11 +26,12 @@ describe "Baby sitter class" do
         expect(babysitter.bed_time).to eq(0)
     end
     
-    it " should have a method called start_time"do
+    it "should have a method called start time"do
         expect(babysitter.set_start_time(17)).to eq("start time is set")
     end
-        
-        
-        
+    
+    it "should say start time is not set when start is before 5pm"do
+        expect(babysitter.set_start_time(15)).to eq("start time is not set")
+    end
         
 end
