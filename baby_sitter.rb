@@ -47,6 +47,6 @@ class Babysitter
     end
     
     def calculate_midnight_to_endtime_moneymade
-        48
+        16 * @end_time
     end
 end
