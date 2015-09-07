@@ -21,4 +21,8 @@ class Babysitter
        end
        "start time is not set"
     end
+    
+    def set_end_time(end_time)
+        "end time is set"
+    end
 end
