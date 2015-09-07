@@ -24,6 +24,10 @@ describe "Baby sitter class" do
     it "should have an initial bed time of zero"do
         expect(babysitter.bed_time).to eq(0)
     end
+    
+    it " should have a method called start_time"do
+        expect(babysitter.set_start_time(17)).to eq("start time is set")
+    end
         
         
         

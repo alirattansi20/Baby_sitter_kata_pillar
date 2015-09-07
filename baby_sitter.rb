@@ -12,5 +12,9 @@ class Babysitter
         @end_time = 0
         @bed_time = 0
     end
+    
+    def set_start_time(start_time)
+    "start time is set"
+    end
 
 end
