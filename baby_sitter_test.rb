@@ -61,7 +61,11 @@ describe "Baby sitter class" do
     end
     
     it "should have a method called bed time"do
-        expect(babysitter.set_bed_time(04)).to eq("bed time is set")
+        expect(babysitter.set_bed_time(22)).to eq("bed time is set")
+    end
+    
+    it "should say bed time is not set when bed is after midnight"do
+        expect(babysitter.set_bed_time(02)).to eq("bed time is not set")
     end
     
 end
