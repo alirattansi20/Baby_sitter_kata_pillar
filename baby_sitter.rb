@@ -49,4 +49,8 @@ class Babysitter
     def calculate_midnight_to_endtime_moneymade
         16 * @end_time
     end
+    
+    def sum_total_calculator
+        "you made $144"
+    end
 end

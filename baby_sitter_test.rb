@@ -104,4 +104,14 @@ describe "Baby sitter class" do
         babysitter.set_end_time(02)
         expect(babysitter.calculate_midnight_to_endtime_moneymade).to eq 32
     end
+    
+    it "should calculate the total money the baby sitter made during the day"do
+        babysitter.set_bed_time(23)
+        babysitter.set_end_time(04)
+        babysitter.set_start_time(17)
+        expect(babysitter.sum_total_calculator).to eq("you made $144")
+        
+    end    
+
+
 end
