@@ -37,4 +37,9 @@ describe "Baby sitter class" do
     it " start time is between 17 and 24 hours"do
         expect(babysitter.set_start_time(25)).to eq("start time is not set")
     end
+    
+    it "instance start time is updated from zero to what ever it is at that time"do
+        babysitter.set_start_time(17)
+        expect(babysitter.start_time).to eq(17)
+    end
 end

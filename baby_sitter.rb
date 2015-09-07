@@ -16,6 +16,7 @@ class Babysitter
     
     def set_start_time(start_time)
        if start_time >= 17 && start_time <= 24
+        @start_time = start_time
        return "start time is set"
        end
        "start time is not set"
