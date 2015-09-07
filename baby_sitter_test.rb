@@ -110,8 +110,14 @@ describe "Baby sitter class" do
         babysitter.set_end_time(04)
         babysitter.set_start_time(17)
         expect(babysitter.sum_total_calculator).to eq("you made $144")
-        
-    end    
+    end   
+    
+    it "should calculate the total money the baby sitter made during the day"do
+        babysitter.set_bed_time(22)
+        babysitter.set_end_time(03)
+        babysitter.set_start_time(18)
+        expect(babysitter.sum_total_calculator).to eq("you made $112")
+    end 
 
 
 end

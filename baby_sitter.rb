@@ -51,6 +51,8 @@ class Babysitter
     end
     
     def sum_total_calculator
-        "you made $144"
+        total = calculate_bedtime_to_midnight_moneymade + calculate_midnight_to_endtime_moneymade + calculate_start_to_bedtime_moneymade
+        
+        "you made $#{total}"
     end
 end
