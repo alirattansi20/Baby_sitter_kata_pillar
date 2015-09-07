@@ -29,4 +29,8 @@ class Babysitter
         end
         "end time is not set"
     end
+    
+    def set_bed_time(bed_time)
+        "bed time is set"
+    end
 end
