@@ -43,6 +43,6 @@ class Babysitter
     end
     
     def calculate_bedtime_to_midnight_moneymade
-        8
+        8 * (24 - @bed_time)
     end
 end

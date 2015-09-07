@@ -89,4 +89,9 @@ describe "Baby sitter class" do
         babysitter.set_bed_time(23)
         expect(babysitter.calculate_bedtime_to_midnight_moneymade).to eq 8
     end
+    
+    it "should calculate money between bed time and midnight" do
+        babysitter.set_bed_time(21)
+        expect(babysitter.calculate_bedtime_to_midnight_moneymade).to eq 24
+    end
 end
