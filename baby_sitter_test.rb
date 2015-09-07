@@ -20,6 +20,10 @@ describe "Baby sitter class" do
     it "should have an initial end time of zero"do
         expect(babysitter.end_time).to eq(0)
     end
+    
+    it "should have an initial bed time of zero"do
+        expect(babysitter.bed_time).to eq(0)
+    end
         
         
         
