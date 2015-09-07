@@ -50,4 +50,8 @@ describe "Baby sitter class" do
     it "should say end time is not set when end is after 4am"do
         expect(babysitter.set_end_time(06)).to eq("end time is not set")
     end
+    
+    it "end time is between 00 and 04 hours"do
+        expect(babysitter.set_end_time(23)).to eq("end time is not set")
+    end
 end
