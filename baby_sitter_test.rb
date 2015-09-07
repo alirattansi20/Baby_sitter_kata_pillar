@@ -12,4 +12,8 @@ describe "Baby sitter class" do
     it "is an instance of the baby sitter class" do 
         expect(babysitter).to be_a Babysitter
     end
+    
+     it "should have an initial start time of zero"do
+        expect(babysitter.start_time).to eq(0)
+    end
 end
