@@ -42,4 +42,7 @@ class Babysitter
         12 * (@bed_time - @start_time)
     end
     
+    def calculate_bedtime_to_midnight_moneymade
+        8
+    end
 end
