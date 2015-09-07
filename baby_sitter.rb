@@ -23,6 +23,9 @@ class Babysitter
     end
     
     def set_end_time(end_time)
-        "end time is set"
+        if end_time <= 04
+        return "end time is set"
+        end
+        "end time is not set"
     end
 end
