@@ -76,6 +76,12 @@ describe "Baby sitter class" do
     it "should calculate money between start time and bed time" do
         babysitter.set_bed_time(23)
         babysitter.set_start_time(17)
-        expect(babysitter.calculate_start_to_bedtime_moneymade).to eq 60
+        expect(babysitter.calculate_start_to_bedtime_moneymade).to eq 72
+    end
+    
+    it "should calculate money between start time and bed time" do
+        babysitter.set_bed_time(22)
+        babysitter.set_start_time(18)
+        expect(babysitter.calculate_start_to_bedtime_moneymade).to eq 48
     end
 end

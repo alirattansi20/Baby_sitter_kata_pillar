@@ -39,7 +39,7 @@ class Babysitter
     end
     
     def calculate_start_to_bedtime_moneymade
-        60
+        12 * (@bed_time - @start_time)
     end
     
 end
