@@ -32,6 +32,7 @@ class Babysitter
     
     def set_bed_time(bed_time)
         if bed_time >= 17 && bed_time <= 24
+            @bed_time = bed_time
         return "bed time is set"
         end
         "bed time is not set"

@@ -68,4 +68,9 @@ describe "Baby sitter class" do
         expect(babysitter.set_bed_time(02)).to eq("bed time is not set")
     end
     
+    it "instance bed time is updated from zero to what ever it is at that time"do
+        babysitter.set_bed_time(22)
+        expect(babysitter.bed_time).to eq(22)
+    end
+    
 end
