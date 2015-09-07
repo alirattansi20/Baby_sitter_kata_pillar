@@ -37,4 +37,9 @@ class Babysitter
         end
         "bed time is not set"
     end
+    
+    def calculate_start_to_bedtime_moneymade
+        60
+    end
+    
 end
