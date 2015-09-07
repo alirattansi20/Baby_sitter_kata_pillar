@@ -5,12 +5,11 @@
 # End time is always after mid night
 
 class Babysitter
-    attr_reader :start_time
+    attr_reader :start_time, :end_time
     
     def initialize
-    
         @start_time = 0
-    
+        @end_time = 0
     end
 
 end
